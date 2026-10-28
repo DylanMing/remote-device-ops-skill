@@ -32,17 +32,13 @@ The front matter uses only the common fields (`name`, `description`), so the sam
 
 ```powershell
 # Claude Code / user-level skills on Windows
-Copy-Item -Recurse . "$env:USERPROFILE\.claude\skills\remote-device"
+Copy-Item -Recurse . "$env:USERPROFILE\.claude\skills\remote-device-ops"
 
 # Claude Code on macOS / Linux
-cp -r . ~/.claude/skills/remote-device
+cp -r . ~/.claude/skills/remote-device-ops
 ```
 
-Most loaders expect the directory name to match `name:` in the front matter. This directory is currently named `remote-device-test`; if you rename it to `remote-device` (recommended, since the scope is operations rather than testing), update `name:` in `SKILL.md` in the same commit:
-
-```powershell
-git mv . ..\remote-device      # or rename in Explorer, then edit SKILL.md name:
-```
+Most loaders expect the directory name to match `name:` in the front matter. Both are `remote-device-ops` here; if you ever rename the folder, change `name:` in `SKILL.md` in the same commit. The GitHub repository is still called `remote-device-test-skill` — a local directory name and a remote repository name need not match.
 
 ## Extending
 

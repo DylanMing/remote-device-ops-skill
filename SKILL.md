@@ -1,5 +1,5 @@
 ---
-name: remote-device-test
+name: remote-device-ops
 description: Operate and verify remote devices over SSH from an automated agent. Use when connecting to a remote Linux, macOS, Windows, or embedded target; probing its OS, architecture, PATH, runtimes, ports, services, permissions, users, or hardware; running one-shot commands, scripts, or long-lived services; deploying binaries, packages, configs, or data; streaming logs and artifacts back to the controller; forwarding ports; and proving that a change actually took effect. Covers non-interactive authentication, quoting and exit-code semantics, background process lifetime, Windows OpenSSH specifics, file transfer, metric collection, and failure triage across access, environment, device, network, protocol, and lifecycle problems.
 ---
 
