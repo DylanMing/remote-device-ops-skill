@@ -1,0 +1,34 @@
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# Logs and temporary output
+*.log
+*.tmp
+*.bak
+.tmp/
+temp/
+tmp/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node
+node_modules/
+
+# Local secrets and scratch space (never commit credentials)
+.env
+.env.*
+!.env.example
+secrets/
+scratch/

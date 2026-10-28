@@ -1,0 +1,4 @@
+interface:
+  display_name: "Remote Device Test"
+  short_description: "Run and diagnose tests on remote devices over SSH."
+  default_prompt: "Use this skill when testing software on a remote Linux or Windows device over SSH, including environment checks, file transfer, process launch, log collection, and metrics validation."

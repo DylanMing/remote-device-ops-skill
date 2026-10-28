@@ -1,0 +1,9 @@
+# Normalize text files to LF so the skill reads identically on every platform.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.zip binary
