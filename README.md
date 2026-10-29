@@ -2,13 +2,14 @@
 
 A portable agent skill for operating remote devices over SSH: connect, profile, run, deploy, verify, report.
 
+Repository: <https://github.com/DylanMing/remote-device-ops-skill>
+
 It is **documentation, not code**. An agent loads `SKILL.md` when a task matches its `description`, then follows the workflow and pulls in a `references/` file only when that specific problem comes up.
 
 ## Layout
 
 ```text
 SKILL.md                  entry point: invariants, workflow, routing table, hard rules
-agents/                   (removed) Codex-only UI metadata — recoverable from git history
 references/
   connect.md              transport, keys, host keys, jump hosts, keepalive, error table
   environment.md          one-shot device profiling: OS, arch, PATH, ports, hardware
@@ -38,7 +39,7 @@ Copy-Item -Recurse . "$env:USERPROFILE\.claude\skills\remote-device-ops"
 cp -r . ~/.claude/skills/remote-device-ops
 ```
 
-Most loaders expect the directory name to match `name:` in the front matter. Both are `remote-device-ops` here; if you ever rename the folder, change `name:` in `SKILL.md` in the same commit. The GitHub repository is still called `remote-device-test-skill` — a local directory name and a remote repository name need not match.
+Most loaders expect the directory name to match `name:` in the front matter. Both are `remote-device-ops` here; if you ever rename the folder, change `name:` in `SKILL.md` in the same commit. The repository carries the `-skill` suffix because it classifies what this is; a directory name, a skill name, and a repository name need not match.
 
 ## Extending
 
